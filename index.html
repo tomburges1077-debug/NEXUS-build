@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>NEXUS build — Monte seu PC Gamer</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>NEXUS build</h1>
+  <p>Monte seu PC gamer futurista!</p>
+</header>
+
+<main>
+
+  <!-- Seletor de Peças -->
+  <section id="pc-builder">
+    <h2>Escolha suas peças:</h2>
+    <div class="parts-grid">
+      <div>
+        <label>CPU:</label>
+        <select id="select-cpu"></select>
+      </div>
+      <div>
+        <label>GPU:</label>
+        <select id="select-gpu"></select>
+      </div>
+      <div>
+        <label>RAM:</label>
+        <select id="select-ram"></select>
+      </div>
+      <div>
+        <label>Storage:</label>
+        <select id="select-storage"></select>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D PC Preview -->
+  <section id="pc-3d">
+    <h2>Visualização 3D</h2>
+    <div id="three-canvas"></div>
+  </section>
+
+  <!-- Preço e Ações -->
+  <section id="price-total">
+    <h2>Total: <span id="total-price">¥0</span></h2>
+    <button id="btn-calc-fps">Calcular FPS</button>
+  </section>
+
+  <!-- Gráfico de FPS -->
+  <section id="fps-results">
+    <h2>Estimativa de FPS no Jogo</h2>
+    <canvas id="fps-chart"></canvas>
+  </section>
+
+  <!-- Links para comprar -->
+  <section id="buy-links">
+    <h2>Comprar Peças</h2>
+    <ul id="links-list"></ul>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
